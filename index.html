@@ -29,10 +29,10 @@
 		}
 	</style>
 	<div id="Content">
-		<div id="Title">Tone.Transport</div>
+		<div id="Title">Batucada Sequencer</div>
 		<div id="Explanation">
-			<a href="https://tonejs.github.io/docs/#Transport">Tone.Transport</a>
-			is the application-wide timekeeper. It's clock source enables sample-accurate scheduling as well as tempo-curves and automation. This example uses Tone.Sequence to invoke a callback every 16th note.
+			<a href="https://github.com/javigomez/batucada_sequencer">Batucada Sequencer</a>
+			Es una herramienta web muy simple para practicar la creación de partituras de batucada para: marcación, surdo, caja, repique...
 		</div>
 		<canvas nx="matrix"></canvas>
 	</div>
@@ -40,10 +40,10 @@
 		//setup a polyphonic sampler
 		var keys = new Tone.MultiPlayer({
 			urls : {
-				"A" : "./audio/hho.mp3",
-				"C#" : "./audio/kick.mp3",
-				"E" : "./audio/snare.mp3",
-				"F#" : "./audio/surdo.mp3",
+				"A" : "./audio/marcacion1.mp3",
+				"C#" : "./audio/marcacion2.mp3",
+				"E" : "./audio/surdo.mp3",
+				"F#" : "./audio/caja.mp3",
 			},
 			volume : -10,
 			fadeOut : 0.1,
